@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <string.h>
+#include "../headers/header.h"
 
 struct User {
   char name[50];
@@ -30,6 +31,8 @@ void toString(struct User *incomingUser) {
 int main() {
   struct User Denis;
   union UserUnion DenisU;
+
+  messageFor(Denis);
 
   strcpy(Denis.name, "Denis");
   strcpy(Denis.surname, "Markitanov");
